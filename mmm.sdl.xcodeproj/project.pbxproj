@@ -7,8 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB14EE5F1F79859B00571623 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AB14EE5E1F79859B00571623 /* main.c */; };
+		AB14EE691F7986D500571623 /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = AB14EE681F7986D500571623 /* sdl.c */; };
+		AB14EE791F79896D00571623 /* libmmm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE781F7987EE00571623 /* libmmm.a */; };
+		AB14EE7B1F7989BB00571623 /* libSDL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE7A1F7989BB00571623 /* libSDL.a */; };
+		AB14EE7D1F7989BE00571623 /* libSDLmain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE7C1F7989BE00571623 /* libSDLmain.a */; };
+		AB14EE811F798A4C00571623 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE801F798A4C00571623 /* QuartzCore.framework */; };
+		AB14EE831F798A7400571623 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE821F798A7400571623 /* ApplicationServices.framework */; };
+		AB14EE851F798A9800571623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE841F798A9800571623 /* Foundation.framework */; };
+		AB14EE871F798AED00571623 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB14EE861F798AED00571623 /* AppKit.framework */; };
+		AB14EE891F798B3700571623 /* host.c in Sources */ = {isa = PBXBuildFile; fileRef = AB14EE881F798B3700571623 /* host.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB14EE771F7987EE00571623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB14EE6C1F79873800571623 /* mmm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB14EE401F7982DC00571623;
+			remoteInfo = mmm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AB14EE591F79859B00571623 /* CopyFiles */ = {
@@ -24,7 +42,19 @@
 
 /* Begin PBXFileReference section */
 		AB14EE5B1F79859B00571623 /* mmm.sdl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mmm.sdl; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB14EE5E1F79859B00571623 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AB14EE661F79864B00571623 /* SDL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL.framework; sourceTree = "<group>"; };
+		AB14EE681F7986D500571623 /* sdl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sdl.c; sourceTree = "<group>"; };
+		AB14EE6A1F7986F700571623 /* host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = host.h; sourceTree = "<group>"; };
+		AB14EE6B1F79870700571623 /* mmm-list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mmm-list.h"; sourceTree = "<group>"; };
+		AB14EE6C1F79873800571623 /* mmm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mmm.xcodeproj; path = ../../../mmm/mmm/mmm.xcodeproj; sourceTree = "<group>"; };
+		AB14EE7A1F7989BB00571623 /* libSDL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDL.a; path = ../../../../../../usr/local/Cellar/sdl/1.2.15/lib/libSDL.a; sourceTree = "<group>"; };
+		AB14EE7C1F7989BE00571623 /* libSDLmain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDLmain.a; path = ../../../../../../usr/local/Cellar/sdl/1.2.15/lib/libSDLmain.a; sourceTree = "<group>"; };
+		AB14EE7E1F7989E900571623 /* libSDL-1.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL-1.2.0.dylib"; path = "../../../../../../usr/local/Cellar/sdl/1.2.15/lib/libSDL-1.2.0.dylib"; sourceTree = "<group>"; };
+		AB14EE801F798A4C00571623 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AB14EE821F798A7400571623 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		AB14EE841F798A9800571623 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB14EE861F798AED00571623 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AB14EE881F798B3700571623 /* host.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = host.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB14EE871F798AED00571623 /* AppKit.framework in Frameworks */,
+				AB14EE851F798A9800571623 /* Foundation.framework in Frameworks */,
+				AB14EE831F798A7400571623 /* ApplicationServices.framework in Frameworks */,
+				AB14EE811F798A4C00571623 /* QuartzCore.framework in Frameworks */,
+				AB14EE7B1F7989BB00571623 /* libSDL.a in Frameworks */,
+				AB14EE7D1F7989BE00571623 /* libSDLmain.a in Frameworks */,
+				AB14EE791F79896D00571623 /* libmmm.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +80,7 @@
 			children = (
 				AB14EE5D1F79859B00571623 /* mmm.sdl */,
 				AB14EE5C1F79859B00571623 /* Products */,
+				AB14EE651F79864B00571623 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +95,36 @@
 		AB14EE5D1F79859B00571623 /* mmm.sdl */ = {
 			isa = PBXGroup;
 			children = (
-				AB14EE5E1F79859B00571623 /* main.c */,
+				AB14EE6C1F79873800571623 /* mmm.xcodeproj */,
+				AB14EE6B1F79870700571623 /* mmm-list.h */,
+				AB14EE6A1F7986F700571623 /* host.h */,
+				AB14EE881F798B3700571623 /* host.c */,
+				AB14EE681F7986D500571623 /* sdl.c */,
 			);
 			path = mmm.sdl;
+			sourceTree = "<group>";
+		};
+		AB14EE651F79864B00571623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB14EE861F798AED00571623 /* AppKit.framework */,
+				AB14EE841F798A9800571623 /* Foundation.framework */,
+				AB14EE821F798A7400571623 /* ApplicationServices.framework */,
+				AB14EE801F798A4C00571623 /* QuartzCore.framework */,
+				AB14EE7E1F7989E900571623 /* libSDL-1.2.0.dylib */,
+				AB14EE7C1F7989BE00571623 /* libSDLmain.a */,
+				AB14EE7A1F7989BB00571623 /* libSDL.a */,
+				AB14EE661F79864B00571623 /* SDL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB14EE741F7987EE00571623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB14EE781F7987EE00571623 /* libmmm.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +173,12 @@
 			mainGroup = AB14EE521F79859B00571623;
 			productRefGroup = AB14EE5C1F79859B00571623 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB14EE741F7987EE00571623 /* Products */;
+					ProjectRef = AB14EE6C1F79873800571623 /* mmm.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AB14EE5A1F79859B00571623 /* mmm.sdl */,
@@ -115,12 +186,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		AB14EE781F7987EE00571623 /* libmmm.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmmm.a;
+			remoteRef = AB14EE771F7987EE00571623 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB14EE571F79859B00571623 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB14EE5F1F79859B00571623 /* main.c in Sources */,
+				AB14EE691F7986D500571623 /* sdl.c in Sources */,
+				AB14EE891F798B3700571623 /* host.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +302,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = T4X9SQWNR2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../mmm/mmm/mmm\"";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/sdl/1.2.15/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -228,6 +319,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = T4X9SQWNR2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../mmm/mmm/mmm\"";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/sdl/1.2.15/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
